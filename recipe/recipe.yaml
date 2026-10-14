@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.9.0"
+  version: "0.10.0"
 
 package:
   name: isar-tools
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/i/isar-tools/isar_tools-${{ version }}.tar.gz
-  sha256: 97b7b0b5bde469637d9b32c4c8ea9cb7857a7f45897175b00c1b02c14b0d6d06
+  sha256: 45b6a02a08a9d61c30d67fefaa9d3d377156e43ca0fb90d97041baad224123d7
 
 build:
   number: 0
