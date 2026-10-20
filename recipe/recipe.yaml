@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.10.0"
+  version: "0.11.0"
 
 package:
   name: isar-tools
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/i/isar-tools/isar_tools-${{ version }}.tar.gz
-  sha256: 45b6a02a08a9d61c30d67fefaa9d3d377156e43ca0fb90d97041baad224123d7
+  sha256: 2820de0633fa1b0a8469ec47d32996cfaa2546bdddc6dc90a71e09c1f517dcc1
 
 build:
   number: 0
@@ -18,6 +18,7 @@ build:
   python:
     entry_points:
       - isar = isar_tools.cli:main
+      - isar-tools = isar_tools.cli:main
 
 requirements:
   host:
@@ -40,6 +41,7 @@ tests:
         - python ${{ python_min }}.*
     script:
       - isar --help
+      - isar-tools --help
 
 about:
   homepage: https://github.com/ManuelLerchner/isar-tools
